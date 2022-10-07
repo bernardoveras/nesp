@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.bernardoveras.nesp.nesp">
    <application
-        android:label="nesp"
+        android:label="Nesp"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
