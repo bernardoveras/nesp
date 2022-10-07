@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "Widgetbook",
+      "type": "dart",
+      "request": "launch",
+      "program": "widgetbook/main.dart",
+      "deviceId": "windows",
+    }
+  ]
+}

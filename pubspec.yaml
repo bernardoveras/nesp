@@ -1,0 +1,22 @@
+name: nesp
+description: Design System
+
+version: 1.0.0
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  widgetbook: ^2.4.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
