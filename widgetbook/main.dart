@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:widgetbook/widgetbook.dart';
 
 import 'components/dialogs/dialog.dart';
+import 'components/textfield/textfield.dart';
 import 'theme/nesp_theme.dart';
 import 'components/badges/badge.dart';
 import 'components/buttons/button.dart';
@@ -313,6 +314,36 @@ class _WidgetbookHotReloadState extends State<WidgetbookHotReload> {
                           onPressed: () {},
                         ),
                       ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            WidgetbookCategory(
+              name: 'Text Fields',
+              widgets: [
+                WidgetbookComponent(
+                  name: 'Text Field',
+                  useCases: [
+                    WidgetbookUseCase(
+                      name: 'default',
+                      builder: (context) {
+                        return  Padding(
+                          padding: const EdgeInsets.all(24.0),
+                          child: Center(
+                            child: NespTextField(
+                              hintText: context.knobs.nullableText(
+                                label: 'hint text',
+                                initialValue: 'Hint'
+                              ),
+                              label: context.knobs.nullableText(
+                                label: 'label',
+                                initialValue: 'label',
+                              ),
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ],
                 ),

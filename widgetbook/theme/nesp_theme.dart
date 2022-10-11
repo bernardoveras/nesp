@@ -39,6 +39,28 @@ class NespTheme {
     canvasColor: const Color(0x7fc3e8f3),
     scaffoldBackgroundColor: Colors.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    inputDecorationTheme: InputDecorationTheme(
+      border: const OutlineInputBorder(
+        borderSide: BorderSide(
+          color: Colors.transparent,
+        ),
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+      ),
+      enabledBorder: const OutlineInputBorder(
+        borderSide: BorderSide(
+          color: Colors.transparent,
+        ),
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+      ),
+      focusedBorder: const OutlineInputBorder(
+        borderSide: BorderSide(
+          color: Colors.transparent,
+        ),
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+      ),
+      filled: true,
+      fillColor: NespColors.neutral(200),
+    ),
   );
 
   static ThemeData dark = ThemeData(

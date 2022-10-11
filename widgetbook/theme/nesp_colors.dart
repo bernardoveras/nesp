@@ -124,7 +124,7 @@ class NespColors {
   /// - *Essas cores transmitem uma emoção de positividade. Geralmente usado em estados completos e de sucesso.*
   ///
   /// **Escalas:**
-  /// - `5 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 900`
+  /// - `50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900`
   ///
   /// **Como utilizar:**
   /// ```dart
@@ -176,7 +176,7 @@ class NespColors {
   /// - *Essas cores transmitem uma emoção de negatividade. Geralmente usado em estados de erro.*
   ///
   /// **Escalas:**
-  /// - `5 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 900`
+  /// - `50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900`
   ///
   /// **Como utilizar:**
   /// ```dart

@@ -15,6 +15,7 @@ class NespButton extends StatelessWidget {
     this.suffixIcon,
     this.prefixIcon,
     this.outlined = false,
+    this.backgroundColor,
   });
 
   final String label;
@@ -24,6 +25,7 @@ class NespButton extends StatelessWidget {
   final bool outlined;
   final IconData? suffixIcon;
   final IconData? prefixIcon;
+  final Color? backgroundColor;
 
   factory NespButton.outlined(
     String label, {
@@ -33,6 +35,7 @@ class NespButton extends StatelessWidget {
     bool loading = false,
     IconData? suffixIcon,
     IconData? prefixIcon,
+    Color? backgroundColor,
   }) {
     return NespButton(
       label,
@@ -43,6 +46,7 @@ class NespButton extends StatelessWidget {
       prefixIcon: prefixIcon,
       radius: radius,
       suffixIcon: suffixIcon,
+      backgroundColor: backgroundColor,
     );
   }
 
@@ -55,6 +59,7 @@ class NespButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(radius),
         ),
       ),
+      backgroundColor: MaterialStateProperty.all(backgroundColor),
       padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 24)),
     );
   }
@@ -73,6 +78,7 @@ class NespButton extends StatelessWidget {
                 prefixIcon: prefixIcon,
                 suffixIcon: suffixIcon,
                 outlined: true,
+                backgroundColor: backgroundColor,
               ),
             )
           : ElevatedButton(
@@ -96,6 +102,7 @@ class _NespButtonChild extends StatelessWidget {
     required this.suffixIcon,
     required this.prefixIcon,
     this.outlined = false,
+    this.backgroundColor,
   });
 
   final bool loading;
@@ -103,6 +110,7 @@ class _NespButtonChild extends StatelessWidget {
   final bool outlined;
   final IconData? suffixIcon;
   final IconData? prefixIcon;
+  final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
@@ -135,7 +143,7 @@ class _NespButtonChild extends StatelessWidget {
               height: 16,
               width: 16,
               child: CircularProgressIndicator(
-                color: outlined ? NespColors.primary() : Colors.white,
+                color: outlined ? backgroundColor ?? NespColors.primary() : Colors.white,
                 strokeWidth: 2.5,
               ),
             )
