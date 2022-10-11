@@ -68,7 +68,7 @@ class NespColors {
   /// - *Essas cores são usadas como suporte de cores secundárias em planos de fundo, cores de texto, separadores, modelos, etc.*
   ///
   /// **Escalas:**
-  /// - `5 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 900`
+  /// - `50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900`
   ///
   /// **Como utilizar:**
   /// ```dart

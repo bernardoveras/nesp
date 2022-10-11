@@ -3,7 +3,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
-import '../theme/nesp_colors.dart';
+import '../../theme/nesp_colors.dart';
 
 class NespButton extends StatelessWidget {
   const NespButton(
@@ -24,6 +24,27 @@ class NespButton extends StatelessWidget {
   final bool outlined;
   final IconData? suffixIcon;
   final IconData? prefixIcon;
+
+  factory NespButton.outlined(
+    String label, {
+    Key? key,
+    VoidCallback? onPressed,
+    double radius = 8.0,
+    bool loading = false,
+    IconData? suffixIcon,
+    IconData? prefixIcon,
+  }) {
+    return NespButton(
+      label,
+      key: key,
+      loading: loading,
+      onPressed: onPressed,
+      outlined: true,
+      prefixIcon: prefixIcon,
+      radius: radius,
+      suffixIcon: suffixIcon,
+    );
+  }
 
   final double _minHeight = 48.0;
 

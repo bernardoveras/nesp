@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme/nesp_colors.dart';
+import '../../theme/nesp_colors.dart';
 
 // Tarefas:
 // 1. Criar suffixIcon
